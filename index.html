@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat GPTchê</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">🧉</span><span>Chat GPTchê</span></div>
+      <button class="icon-button" id="clear-button" title="Limpar conversa" aria-label="Limpar conversa">⌫</button>
+    </header>
+
+    <section class="chat" id="chat" aria-live="polite">
+      <div class="welcome" id="welcome">
+        <div class="welcome-icon">🧉</div>
+        <h1>Olá, como posso ajudar?</h1>
+        <p>Converse com o nosso chatbot sulista.</p>
+        <div class="suggestions">
+          <button data-prompt="Explique como funciona a inteligência artificial">Explique inteligência artificial</button>
+          <button data-prompt="Crie uma ideia criativa para um projeto">Crie uma ideia criativa</button>
+          <button data-prompt="Escreva um pequeno código JavaScript">Escreva código JavaScript</button>
+        </div>
+      </div>
+    </section>
+
+    <form class="composer" id="form">
+      <div class="input-wrap">
+        <textarea id="message" rows="1" placeholder="Digite sua mensagem..." aria-label="Mensagem"></textarea>
+        <button class="send-button" id="send-button" type="submit" aria-label="Enviar mensagem">➤</button>
+      </div>
+      <small>O Chatbot pode cometer erros. Verifique as informações importantes.</small>
+    </form>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
