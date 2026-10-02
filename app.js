@@ -18,7 +18,7 @@ messageInput.addEventListener('input', () => {
 messageInput.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' && !e.shiftKey) {
     e.preventDefault();
-    form.dispatchEvent(new Event('submit'));
+    sendMessage();
   }
 });
 
